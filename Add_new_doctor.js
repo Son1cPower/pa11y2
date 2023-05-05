@@ -18,6 +18,9 @@ async function runExample() {
 
         // Test http://example.com/
         const result = await pa11y('https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors', {
+
+
+
             // WCAG2A, WCAG2AA, or WCAG2AAA 
             standard: 'WCAG2AAA',
             includeNotices: true,

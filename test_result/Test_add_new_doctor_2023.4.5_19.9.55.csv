@@ -1,0 +1,2 @@
+"type","code","message","context","selector"
+"notice","WCAG2AAA.Principle2.Guideline2_4.2_4_1.H64.2","Check that the title attribute of this element contains text that identifies the frame.","<iframe allowfullscreen=\"\" name=\"intercom-messenger-frame\" title=\"Intercom live chat\" data-intercom-frame=\"true\" role=\"dialog\"></iframe>","#intercom-container > div > div:nth-child(1) > iframe"

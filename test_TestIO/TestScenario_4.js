@@ -52,7 +52,7 @@ async function runExample() {
             includeWarnings: true,
 
             // The root element for testing a subset of the page opposed to the full document.
-            // rootElement: '#_dialog-content',
+            rootElement: '.filter-sidebar',
             // Run some actions before the tests
             actions: [
                 `set field #user_email to ${Email}`,
@@ -61,6 +61,8 @@ async function runExample() {
                 "wait for element img[title='test IO'] to be visible",
                 "click element img[title='test IO']",
                 "click element a[class='testio-nav-item hidden-xs-down'] span[class='icon icon-activity mr-0']",
+                "click element .icon.icon-filter",
+
                 "wait for element div[aria-label='Open Intercom Messenger'] to be visible",
 
             ],

@@ -52,15 +52,15 @@ async function runExample() {
             includeWarnings: true,
 
             // The root element for testing a subset of the page opposed to the full document.
-            // rootElement: '#_dialog-content',
+            //rootElement: '#notice_items',
             // Run some actions before the tests
+            hideElements: '#top-nav-bar, #main-sidebar',
             actions: [
                 `set field #user_email to ${Email}`,
                 `set field #user_password to ${Password}`,
                 "click element .btn.btn-primary.btn-block",
                 "wait for element img[title='test IO'] to be visible",
-                "click element img[title='test IO']",
-                "click element a[data-original-title='Notifications']",
+                "click element .icon.icon-bell.mr-0",
                 "wait for element div[aria-label='Open Intercom Messenger'] to be visible",
             ],
 

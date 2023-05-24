@@ -21,7 +21,7 @@ runExample();
 // Async function required for us to use await
 async function runExample() {
     let browser;
-    //  let pages;
+    // let pages;
     try {
 
         // Launch our own browser
@@ -53,16 +53,10 @@ async function runExample() {
 
             // The root element for testing a subset of the page opposed to the full document.
             // rootElement: '#_dialog-content',
-            hideElements: '#top-nav-bar, #main-sidebar',
             // Run some actions before the tests
             actions: [
                 `set field #user_email to ${Email}`,
                 `set field #user_password to ${Password}`,
-                "click element .btn.btn-primary.btn-block",
-                "wait for element img[title='test IO'] to be visible",
-                "click element img[title='test IO']",
-                "click element a[class='testio-nav-item hidden-xs-down'] span[class='icon icon-devices mr-0']",
-                "wait for element div[aria-label='Open Intercom Messenger'] to be visible",
 
             ],
 

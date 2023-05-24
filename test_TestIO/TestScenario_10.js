@@ -54,6 +54,7 @@ async function runExample() {
             // The root element for testing a subset of the page opposed to the full document.
             // rootElement: '#_dialog-content',
             // Run some actions before the tests
+            hideElements: '#top-nav-bar, #main-sidebar',
             actions: [
                 `set field #user_email to ${Email}`,
                 `set field #user_password to ${Password}`,
